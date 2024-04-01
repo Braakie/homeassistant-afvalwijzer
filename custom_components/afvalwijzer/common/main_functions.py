@@ -14,6 +14,7 @@ def _waste_type_rename(item_name):
         "groente": "gft",
         "groente-, fruit en tuinafval": "gft",
         "groente, fruit- en tuinafval": "gft",
+        "gft & etensresten": "gft",
         "grey": "restafval",
         "grijze container": "restafval",
         "kca": "chemisch",
