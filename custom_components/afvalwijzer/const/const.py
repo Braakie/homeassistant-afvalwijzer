@@ -5,7 +5,8 @@ _LOGGER = logging.getLogger(__name__)
 
 API = "api"
 NAME = "afvalwijzer"
-VERSION = "2024.01.06"
+VERSION = "2024.12.01"
+
 ISSUE_URL = "https://github.com/xirixiz/homeassistant-afvalwijzer/issues"
 
 SENSOR_COLLECTOR_TO_URL = {
@@ -97,6 +98,7 @@ SENSOR_COLLECTORS_BURGERPORTAAL = {
     'rmn': '138204213564933597',
     'bar': '138204213564933497',
     'assen': '138204213565303512',
+    'nijkerk': '138204213565304094',
 }
 
 SENSOR_COLLECTORS_DEAFVALAPP = {
@@ -113,6 +115,7 @@ CONF_EXCLUDE_PICKUP_TODAY = "exclude_pickup_today"
 CONF_DEFAULT_LABEL = "default_label"
 CONF_ID = "id"
 CONF_EXCLUDE_LIST = "exclude_list"
+CONF_DATE_ISOFORMAT = "date_isoformat"
 
 SENSOR_PREFIX = "afvalwijzer "
 SENSOR_ICON = "mdi:recycle"
@@ -122,12 +125,8 @@ ATTR_IS_COLLECTION_DATE_TODAY = "is_collection_date_today"
 ATTR_IS_COLLECTION_DATE_TOMORROW = "is_collection_date_tomorrow"
 ATTR_IS_COLLECTION_DATE_DAY_AFTER_TOMORROW = "is_collection_date_day_after_tomorrow"
 ATTR_DAYS_UNTIL_COLLECTION_DATE = "days_until_collection_date"
-ATTR_YEAR_MONTH_DAY_DATE = "year_month_day_date"
-ATTR_ISOFORMATTED_DATE = "isoformatted_date"
 
-MIN_TIME_BETWEEN_UPDATES = timedelta(hours=1)
-PARALLEL_UPDATES = 1
-SCAN_INTERVAL = timedelta(seconds=30)
+SCAN_INTERVAL = timedelta(hours=4)
 
 DOMAIN = "afvalwijzer"
 DOMAIN_DATA = "afvalwijzer_data"
